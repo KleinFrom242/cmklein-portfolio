@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Christopher Klein{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="fw-bold">Welcome to My Portfolio</h1>
+    <p class="lead">I am a Bahamian Software Engineer.</p>
+
+    <div class="mt-4">
+        <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg">View Projects</a>
+        <a href="{{ url_for('resume') }}" class="btn btn-outline-secondary btn-lg">View Resume</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - Christopher Klein{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mb-4">Projects</h1>
+
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.name }}</h5>
+                    <p class="card-text">{{ project.description }}</p> <!-- Project Description -->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" data-percentage="{{ project.progress }}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- JavaScript for Progress Animation (Only on this Page) -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const progressBars = document.querySelectorAll(".progress-bar");
+
+        progressBars.forEach(bar => {
+            const percentage = bar.getAttribute("data-percentage");
+            bar.style.width = percentage + "%";
+        });
+    });
+</script>
+
+{% endblock %}
