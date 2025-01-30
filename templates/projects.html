@@ -14,28 +14,17 @@
                     <i class="{{ project.icon }} project-icon"></i> <!-- Icon -->
                     <h5 class="card-title mt-3">{{ project.name }}</h5>
                     <p class="card-text">{{ project.description }}</p>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-percentage="{{ project.progress }}"></div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-container">
+                        <div class="progress-bar" style="--progress-width: {{ project.progress }}%;"></div>
                     </div>
+
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
-
-<!-- JavaScript for Progress Animation with Delay -->
-<script>
-    window.onload = function () {
-        const progressBars = document.querySelectorAll(".progress-bar");
-
-        setTimeout(() => {  // Delay the animation by 500ms after full page load
-            progressBars.forEach(bar => {
-                const percentage = bar.getAttribute("data-percentage");
-                bar.style.width = percentage + "%";
-            });
-        }, 250); // Adjust delay time (in milliseconds) as needed
-    };
-</script>
 
 {% endblock %}

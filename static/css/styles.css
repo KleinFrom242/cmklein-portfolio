@@ -109,21 +109,32 @@ body {
     margin-bottom: 10px;
 }
 
-/* Progress Bar - Blue Gradient */
-.progress {
-    height: 12px;
-    border-radius: 8px;
-    background-color: #e9ecef;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+/* Progress Bar - CSS Animation */
+.progress-container {
     width: 100%;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 12px;
+    position: relative;
 }
 
 .progress-bar {
+    width: 0%; /* Start at 0% */
+    height: 100%;
     border-radius: 8px;
-    width: 0%;
-    transition: width 1.5s ease-in-out;
-    background: linear-gradient(90deg, #007bff, #3399ff); /* Blue Gradient */
+    background: linear-gradient(90deg, #007bff, #3399ff); /* Blue gradient */
+    animation: fillProgress 2s ease-in-out forwards;
+}
+
+/* Keyframes Animation for Progress Bar */
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress-width, 100%);
+    }
 }
 
 /* Footer */
