@@ -9,10 +9,11 @@
     <div class="row">
         {% for project in projects %}
         <div class="col-md-6">
-            <div class="card mb-4">
+            <div class="card mb-4 text-center">
                 <div class="card-body">
-                    <h5 class="card-title">{{ project.name }}</h5>
-                    <p class="card-text">{{ project.description }}</p> <!-- Project Description -->
+                    <i class="{{ project.icon }} project-icon"></i> <!-- Icon -->
+                    <h5 class="card-title mt-3">{{ project.name }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" data-percentage="{{ project.progress }}"></div>
                     </div>
@@ -23,7 +24,7 @@
     </div>
 </div>
 
-<!-- JavaScript for Progress Animation (Only on this Page) -->
+<!-- JavaScript for Progress Animation -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const progressBars = document.querySelectorAll(".progress-bar");

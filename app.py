@@ -9,8 +9,18 @@ def index():
 @app.route('/projects')
 def projects():
     projects_data = [
-        {"name": "Sister’s Resume Website", "description": "Showcasing my sister’s research.", "progress": 10},
-        {"name": "VPN Service", "description": "A secure VPN for privacy.", "progress": 20},
+        {
+            "name": "Sister’s Resume Website",
+            "description": "Showcasing my sister’s research.",
+            "progress": 10,
+            "icon": "fa-solid fa-globe",  # Icon for website-related project
+        },
+        {
+            "name": "VPN Service",
+            "description": "A secure VPN for privacy.",
+            "progress": 20,
+            "icon": "fa-solid fa-shield-halved",  # Icon for security-related project
+        }
     ]
     return render_template('projects.html', projects=projects_data)
 

@@ -5,15 +5,26 @@ body {
     color: #333;
 }
 
-/* Navbar */
+/* Navbar Styling */
 .navbar {
     background-color: #ffffff;
     padding: 15px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .navbar-brand {
+.navbar .fancy-logo {
+    font-size: 24px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #000; /* Black logo */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navbar .fancy-logo:hover {
+    opacity: 0.8; /* Subtle effect */
+    text-decoration: none;
 }
 
 .navbar .nav-link {
@@ -53,50 +64,49 @@ body {
     background-color: #0056b3;
 }
 
-.btn-outline-secondary {
-    border: 2px solid #6c757d;
-    color: #6c757d;
-}
-
-.btn-outline-secondary:hover {
-    background-color: #6c757d;
-    color: white;
-}
-
-/* Headings */
-h1, h3, h5 {
-    color: #222;
-    font-weight: bold;
-}
-
-/* Resume Page Formatting */
-.resume-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+/* Resume Page Cards (No Hover, No Left Accent) */
+.resume-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: white;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
+/* Remove Hover for Resume Cards */
+.resume-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
 }
 
-ul {
-    padding-left: 20px;
+/* Remove List Bullet Points in Resume Cards */
+.resume-card ul {
+    list-style: none;  /* Removes default bullets */
+    padding-left: 0;  /* Aligns content properly */
 }
 
-ul li {
-    margin-bottom: 5px;
-    font-size: 16px;
+.resume-card ul li {
+    padding-left: 10px;  /* Adds slight left spacing for readability */
+    position: relative;
 }
 
-/* Resume Section Headers */
-h3 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    font-weight: bold;
-    margin-top: 20px;
+/* Project Card Styling */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Icons */
+.project-icon {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
 /* Progress Bar - Blue Gradient */
@@ -119,21 +129,10 @@ h3 {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 15px;
+    margin-top: 30px;
     font-size: 14px;
     color: #666;
     background-color: #f8f9fa;
     border-top: 1px solid #ddd;
-}
-
-/* Card Hover Effect */
-.card {
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
