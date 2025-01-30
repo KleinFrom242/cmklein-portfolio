@@ -24,16 +24,18 @@
     </div>
 </div>
 
-<!-- JavaScript for Progress Animation -->
+<!-- JavaScript for Progress Animation with Delay -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    window.onload = function () {
         const progressBars = document.querySelectorAll(".progress-bar");
 
-        progressBars.forEach(bar => {
-            const percentage = bar.getAttribute("data-percentage");
-            bar.style.width = percentage + "%";
-        });
-    });
+        setTimeout(() => {  // Delay the animation by 500ms after full page load
+            progressBars.forEach(bar => {
+                const percentage = bar.getAttribute("data-percentage");
+                bar.style.width = percentage + "%";
+            });
+        }, 250); // Adjust delay time (in milliseconds) as needed
+    };
 </script>
 
 {% endblock %}
