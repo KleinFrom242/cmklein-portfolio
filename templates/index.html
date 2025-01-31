@@ -5,7 +5,7 @@
 {% block content %}
 <div class="text-center">
     <h1 class="fw-bold">Welcome to My Portfolio</h1>
-    <p class="lead">I am a Bahamian Software Engineer.</p>
+    <img src="{{ url_for('static', filename='images/portfolio-image.jpg') }}" alt="Portfolio Image" class="portfolio-image">
 
     <div class="mt-4">
         <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg">View Projects</a>

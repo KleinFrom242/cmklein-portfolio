@@ -197,3 +197,11 @@ body {
     transform: scale(1.1);
     color: #0056b3;
 }
+
+.portfolio-image {
+    width: 100%; /* Adjusts to the container */
+    max-width: 600px; /* Limits size */
+    border-radius: 10px; /* Optional rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
