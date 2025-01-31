@@ -1,11 +1,11 @@
-/* Global Styles */
+/* =================== Global Styles =================== */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
 }
 
-/* Navbar Styling */
+/* =================== Navbar Styling =================== */
 .navbar {
     background-color: #ffffff;
     padding: 15px;
@@ -16,14 +16,14 @@ body {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    color: #000; /* Black logo */
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: opacity 0.3s ease-in-out;
 }
 
 .navbar .fancy-logo:hover {
-    opacity: 0.8; /* Subtle effect */
+    opacity: 0.8;
     text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ body {
     color: #007bff;
 }
 
-/* Containers */
+/* =================== Containers =================== */
 .container {
     max-width: 900px;
     margin: auto;
@@ -47,7 +47,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Buttons */
+/* =================== Buttons =================== */
 .btn {
     border-radius: 30px;
     padding: 10px 20px;
@@ -64,7 +64,7 @@ body {
     background-color: #0056b3;
 }
 
-/* Resume Page Cards (No Hover, No Left Accent) */
+/* =================== Resume Page Styling =================== */
 .resume-card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -73,24 +73,22 @@ body {
     margin-bottom: 20px;
 }
 
-/* Remove Hover for Resume Cards */
 .resume-card:hover {
     transform: none !important;
     box-shadow: none !important;
 }
 
-/* Remove List Bullet Points in Resume Cards */
 .resume-card ul {
-    list-style: none;  /* Removes default bullets */
-    padding-left: 0;  /* Aligns content properly */
+    list-style: none;
+    padding-left: 0;
 }
 
 .resume-card ul li {
-    padding-left: 10px;  /* Adds slight left spacing for readability */
+    padding-left: 10px;
     position: relative;
 }
 
-/* Project Card Styling */
+/* =================== Project Cards =================== */
 .card {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -109,7 +107,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Progress Bar - CSS Animation */
+/* =================== Progress Bar Animation =================== */
 .progress-container {
     width: 100%;
     background-color: #e9ecef;
@@ -120,24 +118,19 @@ body {
 }
 
 .progress-bar {
-    width: 0%; /* Start at 0% */
+    width: 0%;
     height: 100%;
     border-radius: 8px;
-    background: linear-gradient(90deg, #007bff, #3399ff); /* Blue gradient */
+    background: linear-gradient(90deg, #007bff, #3399ff);
     animation: fillProgress 2s ease-in-out forwards;
 }
 
-/* Keyframes Animation for Progress Bar */
 @keyframes fillProgress {
-    from {
-        width: 0%;
-    }
-    to {
-        width: var(--progress-width, 100%);
-    }
+    from { width: 0%; }
+    to { width: var(--progress-width, 100%); }
 }
 
-/* Footer */
+/* =================== Footer Styling =================== */
 .footer {
     text-align: center;
     padding: 15px;
@@ -148,7 +141,7 @@ body {
     border-top: 1px solid #ddd;
 }
 
-/* Contact Page Styling */
+/* =================== Contact Page Styling =================== */
 .contact-info {
     margin-top: 20px;
     text-align: center;
@@ -178,17 +171,17 @@ body {
     text-decoration: underline;
 }
 
-/* Social Media Icons */
+/* =================== Social Media Icons =================== */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between icons */
+    gap: 15px;
     margin-top: 15px;
 }
 
 .social-icon {
-    font-size: 30px; /* Adjust size of icons */
-    color: #007bff; /* Blue color */
+    font-size: 30px;
+    color: #007bff;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -198,10 +191,11 @@ body {
     color: #0056b3;
 }
 
+/* =================== Portfolio Image Styling =================== */
 .portfolio-image {
-    width: 100%; /* Adjusts to the container */
-    max-width: 600px; /* Limits size */
-    border-radius: 10px; /* Optional rounded edges */
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
 }
