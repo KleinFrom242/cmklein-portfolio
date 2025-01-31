@@ -32,12 +32,27 @@ Live at: **[https://cmklein.com](https://cmklein.com)**
 ---
 
 ## 🛠 Project Structure  
-```/cmklein-portfolio
-│── /static             # CSS, JS, Images
-│── /templates          # HTML Templates
-│── app.py              # Flask Application
-│── requirements.txt    # Python Dependencies
-│── README.md           # This file
+```cmklein-portfolio/
+├── __pycache__/
+├── static/
+│   ├── images/
+│   ├── js/
+|   |   └── scripts.js
+│   └── styles/
+│       └── styles.css
+├── templates/
+│   ├── base.html
+│   ├── contact.html
+│   ├── index.html
+│   ├── projects.html
+│   └── resume.html
+├── .gitignore
+├── app.py
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── venv/
+    └── (virtual environment files)
 ```
 ---
 
