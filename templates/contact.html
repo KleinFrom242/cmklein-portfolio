@@ -3,10 +3,28 @@
 {% block title %}Contact - Christopher Klein{% endblock %}
 
 {% block content %}
-<h1 class="text-center mb-4">Contact Me</h1>
+<div class="container">
+    <h1 class="text-center mb-4">Get in Touch</h1>
 
-<div class="text-center">
-    <p>Email: <a href="mailto:me@cmklein.com">me@cmklein.com</a></p>
-    <p>Phone: (242) 423-2198 | (352) 281-9524</p>
+    <div class="contact-info text-center">
+        <p><strong>Email:</strong> <a href="mailto:me@cmklein.com">me@cmklein.com</a></p>
+        
+        <!-- Phone Numbers -->
+        <p><strong>Phone:</strong></p>
+        <ul class="phone-list">
+            <li><a href="tel:+12424232198">+1 (242) 423-2198</a></li>
+            <li><a href="tel:+13522819524">+1 (352) 281-9524</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername/" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/12424232198" target="_blank" class="social-icon whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
 </div>
 {% endblock %}
