@@ -32,7 +32,8 @@ Live at: **[https://cmklein.com](https://cmklein.com)**
 ---
 
 ## 🛠 Project Structure  
-```cmklein-portfolio/
+```
+cmklein-portfolio/
 ├── __pycache__/
 ├── static/
 │   ├── images/
