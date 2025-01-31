@@ -32,13 +32,13 @@ Live at: **[https://cmklein.com](https://cmklein.com)**
 ---
 
 ## 🛠 Project Structure  
-/cmklein-portfolio
+```/cmklein-portfolio
 │── /static             # CSS, JS, Images
 │── /templates          # HTML Templates
 │── app.py              # Flask Application
 │── requirements.txt    # Python Dependencies
 │── README.md           # This file
-
+```
 ---
 
 ## 📜 License  
