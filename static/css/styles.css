@@ -187,20 +187,13 @@ body {
 }
 
 .social-icon {
-    font-size: 35px;
+    font-size: 30px; /* Adjust size of icons */
+    color: #007bff; /* Blue color */
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Icon Colors */
-.instagram {
-    color: #E4405F; /* Instagram Pink-Red */
-}
-
-.whatsapp {
-    color: #25D366; /* WhatsApp Green */
-}
-
 .social-icon:hover {
     transform: scale(1.1);
+    color: #0056b3;
 }
