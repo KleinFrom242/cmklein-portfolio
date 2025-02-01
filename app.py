@@ -10,8 +10,8 @@ def index():
 def projects():
     projects_data = [
         {
-            "name": "Sister’s Resume Website",
-            "description": "Showcasing my sister’s research.",
+            "name": "Client's Resume Website",
+            "description": "Showcasing my client's research.",
             "progress": 10,
             "icon": "fa-solid fa-globe",  # Icon for website-related project
         },
@@ -20,6 +20,12 @@ def projects():
             "description": "A secure VPN for privacy.",
             "progress": 20,
             "icon": "fa-solid fa-shield-halved",  # Icon for security-related project
+        },
+        {
+            "name": "PDF Extractor Revamp",
+            "description": "Revamping the PDF Extractor project.",
+            "progress": 0,
+            "icon": "fa-solid fa-file-code",  # Icon for python-related project
         }
     ]
     return render_template('projects.html', projects=projects_data)
