@@ -24,7 +24,7 @@ def projects():
         {
             "name": "PDF Extractor Revamp",
             "description": "Revamping the PDF Extractor project.",
-            "progress": 0,
+            "progress": 55,
             "icon": "fa-solid fa-file-code",  # Icon for python-related project
         }
     ]
