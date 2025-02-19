@@ -1,0 +1,301 @@
+[
+    {
+      "question": "What is a hydrate, and how is it named according to the text?",
+      "answer": "A hydrate is an ionic compound with a specific number of water molecules attached. It is named by taking the ionic compound’s name, adding a numerical prefix for the number of water molecules, and then adding '-hydrate.'"
+    },
+    {
+      "question": "What does it mean for an ionic compound to be 'anhydrous'?",
+      "answer": "It means the compound does not have any water molecules bound to it."
+    },
+    {
+      "question": "How are acids defined in terms of their ions?",
+      "answer": "Acids are ionic compounds whose cations are hydrogen ions (H⁺)."
+    },
+    {
+      "question": "How are binary acids named based on their components?",
+      "answer": "Binary acids use the prefix 'hydro-', followed by the anion’s root, and end with the suffix '-ic.'"
+    },
+    {
+      "question": "In what way does the oxoanion suffix determine the name of the corresponding oxoacid?",
+      "answer": "For oxoanions ending in '-ate,' the oxoacid suffix is '-ic.' For oxoanions ending in '-ite,' the oxoacid suffix is '-ous.'"
+    },
+    {
+      "question": "What defines a base in the context of these ionic compounds?",
+      "answer": "A base is an ionic compound where the anion is the hydroxide ion (OH⁻)."
+    },
+    {
+      "question": "What are organic compounds, and around which element do they primarily revolve?",
+      "answer": "Organic compounds are molecules focused primarily around carbon."
+    },
+    {
+      "question": "What are hydrocarbons, and what elements do they contain?",
+      "answer": "Hydrocarbons are organic compounds containing only carbon and hydrogen atoms."
+    },
+    {
+      "question": "What is an alkane, and how is it named according to the number of carbon atoms?",
+      "answer": "An alkane is the simplest type of hydrocarbon. It is named using the number of carbon atoms plus the suffix '-ane' (e.g., methane, ethane, propane)."
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 1 carbon atom?",
+      "answer": "meth-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 2 carbon atoms?",
+      "answer": "eth-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 3 carbon atoms?",
+      "answer": "prop-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 4 carbon atoms?",
+      "answer": "but-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 5 carbon atoms?",
+      "answer": "pent-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 6 carbon atoms?",
+      "answer": "hex-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 7 carbon atoms?",
+      "answer": "hept-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 8 carbon atoms?",
+      "answer": "oct-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 9 carbon atoms?",
+      "answer": "non-"
+    },
+    {
+      "question": "What is the alkane prefix for a chain with 10 carbon atoms?",
+      "answer": "dec-"
+    },
+
+    {
+      "question": "What are the properties of the hydrogen ion?",
+      "answer": "Name: hydrogen; Formula: H⁺; Charge: +1; Type: cation"
+    },
+    {
+      "question": "**What are the properties of the lithium ion?**",
+      "answer": "**Name: lithium; Formula: Li⁺; Charge: +1; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the sodium ion?**",
+      "answer": "**Name: sodium; Formula: Na⁺; Charge: +1; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the potassium ion?**",
+      "answer": "**Name: potassium; Formula: K⁺; Charge: +1; Type: cation**"
+    },
+    {
+      "question": "What are the properties of the cesium ion?",
+      "answer": "Name: cesium; Formula: Cs⁺; Charge: +1; Type: cation"
+    },
+    {
+      "question": "**What are the properties of the silver ion?**",
+      "answer": "**Name: silver; Formula: Ag⁺; Charge: +1; Type: cation**"
+    },
+    {
+      "question": "What are the properties of the hydride ion?",
+      "answer": "Name: hydride; Formula: H⁻; Charge: −1; Type: anion"
+    },
+    {
+      "question": "**What are the properties of the fluoride ion?**",
+      "answer": "**Name: fluoride; Formula: F⁻; Charge: −1; Type: anion**"
+    },
+    {
+      "question": "**What are the properties of the chloride ion?**",
+      "answer": "**Name: chloride; Formula: Cl⁻; Charge: −1; Type: anion**"
+    },
+    {
+      "question": "**What are the properties of the bromide ion?**",
+      "answer": "**Name: bromide; Formula: Br⁻; Charge: −1; Type: anion**"
+    },
+    {
+      "question": "**What are the properties of the iodide ion?**",
+      "answer": "**Name: iodide; Formula: I⁻; Charge: −1; Type: anion**"
+    },
+    {
+      "question": "**What are the properties of the magnesium ion?**",
+      "answer": "**Name: magnesium; Formula: Mg²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the calcium ion?**",
+      "answer": "**Name: calcium; Formula: Ca²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "What are the properties of the strontium ion?",
+      "answer": "Name: strontium; Formula: Sr²⁺; Charge: +2; Type: cation"
+    },
+    {
+      "question": "**What are the properties of the barium ion?**",
+      "answer": "**Name: barium; Formula: Ba²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the zinc ion?**",
+      "answer": "**Name: zinc; Formula: Zn²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "What are the properties of the cadmium ion?",
+      "answer": "Name: cadmium; Formula: Cd²⁺; Charge: +2; Type: cation"
+    },
+    {
+      "question": "**What are the properties of the oxide ion?**",
+      "answer": "**Name: oxide; Formula: O²⁻; Charge: −2; Type: anion**"
+    },
+    {
+      "question": "What are the properties of the sulfide ion?",
+      "answer": "Name: sulfide; Formula: S²⁻; Charge: −2; Type: anion"
+    },
+    {
+      "question": "What are the properties of the aluminum ion?",
+      "answer": "Name: aluminum; Formula: Al³⁺; Charge: +3; Type: cation"
+    },
+    {
+      "question": "What are the properties of the nitride ion?",
+      "answer": "Name: nitride; Formula: N³⁻; Charge: −3; Type: anion"
+    },
+
+    {
+      "question": "What are the properties of the chromium(II) ion?",
+      "answer": "Systematic Name: chromium(II); Common Name: chromous; Formula: Cr²⁺; Charge: +2; Type: cation"
+    },
+    {
+      "question": "**What are the properties of the chromium(III) ion?**",
+      "answer": "**Systematic Name: chromium(III); Common Name: chromic; Formula: Cr³⁺; Charge: +3; Type: cation**"
+    },
+    {
+      "question": "What are the properties of the cobalt(II) ion?",
+      "answer": "Systematic Name: cobalt(II); Formula: Co²⁺; Charge: +2; Type: cation"
+    },
+    {
+      "question": "What are the properties of the cobalt(III) ion?",
+      "answer": "Systematic Name: cobalt(III); Formula: Co³⁺; Charge: +3; Type: cation"
+    },
+    {
+      "question": "**What are the properties of the copper(I) ion?**",
+      "answer": "**Systematic Name: copper(I); Common Name: cuprous; Formula: Cu⁺; Charge: +1; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the copper(II) ion?**",
+      "answer": "**Systematic Name: copper(II); Common Name: cupric; Formula: Cu²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the iron(II) ion?**",
+      "answer": "**Systematic Name: iron(II); Common Name: ferrous; Formula: Fe²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the iron(III) ion?**",
+      "answer": "**Systematic Name: iron(III); Common Name: ferric; Formula: Fe³⁺; Charge: +3; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the lead(II) ion?**",
+      "answer": "**Systematic Name: lead(II); Formula: Pb²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "What are the properties of the lead(IV) ion?",
+      "answer": "Systematic Name: lead(IV); Formula: Pb⁴⁺; Charge: +4; Type: cation"
+    },
+    {
+      "question": "What are the properties of the mercury(I) ion?",
+      "answer": "Systematic Name: mercury(I); Common Name: mercurous; Formula: Hg₂²⁺; Charge: +2 (for the Hg₂ unit); Type: cation"
+    },
+    {
+      "question": "**What are the properties of the mercury(II) ion?**",
+      "answer": "**Systematic Name: mercury(II); Common Name: mercuric; Formula: Hg²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "**What are the properties of the tin(II) ion?**",
+      "answer": "**Systematic Name: tin(II); Common Name: stannous; Formula: Sn²⁺; Charge: +2; Type: cation**"
+    },
+    {
+      "question": "What are the properties of the tin(IV) ion?",
+      "answer": "Systematic Name: tin(IV); Common Name: stannic; Formula: Sn⁴⁺; Charge: +4; Type: cation"
+    },
+
+    {
+      "question": "**What are the properties of the ammonium ion?**",
+      "answer": "**Name: ammonium; Formula: NH₄⁺; Charge: +1; Type: polyatomic cation**"
+    },
+    {
+      "question": "**What are the properties of the hydronium ion?**",
+      "answer": "**Name: hydronium; Formula: H₃O⁺; Charge: +1; Type: polyatomic cation**"
+    },
+    {
+      "question": "**What are the properties of the acetate ion?**",
+      "answer": "**Name: acetate; Formula: CH₃COO⁻; Charge: −1; Type: polyatomic anion**"
+    },
+    {
+      "question": "What are the properties of the cyanide ion?",
+      "answer": "Name: cyanide; Formula: CN⁻; Charge: −1; Type: polyatomic anion"
+    },
+    {
+      "question": "**What are the properties of the hydroxide ion?**",
+      "answer": "**Name: hydroxide; Formula: OH⁻; Charge: −1; Type: polyatomic anion**"
+    },
+    {
+      "question": "What are the properties of the hypochlorite ion?",
+      "answer": "Name: hypochlorite; Formula: ClO⁻; Charge: −1; Type: polyatomic anion"
+    },
+    {
+      "question": "What are the properties of the chlorite ion?",
+      "answer": "Name: chlorite; Formula: ClO₂⁻; Charge: −1; Type: polyatomic anion"
+    },
+    {
+      "question": "**What are the properties of the chlorate ion?**",
+      "answer": "**Name: chlorate; Formula: ClO₃⁻; Charge: −1; Type: polyatomic anion**"
+    },
+    {
+      "question": "What are the properties of the nitrite ion?",
+      "answer": "Name: nitrite; Formula: NO₂⁻; Charge: −1; Type: polyatomic anion"
+    },
+    {
+      "question": "**What are the properties of the nitrate ion?**",
+      "answer": "**Name: nitrate; Formula: NO₃⁻; Charge: −1; Type: polyatomic anion**"
+    },
+    {
+      "question": "**What are the properties of the permanganate ion?**",
+      "answer": "**Name: permanganate; Formula: MnO₄⁻; Charge: −1; Type: polyatomic anion**"
+    },
+    {
+      "question": "**What are the properties of the carbonate ion?**",
+      "answer": "**Name: carbonate; Formula: CO₃²⁻; Charge: −2; Type: polyatomic anion**"
+    },
+    {
+      "question": "**What are the properties of the bicarbonate ion?**",
+      "answer": "**Name: bicarbonate; Formula: HCO₃⁻; Charge: −1; Type: polyatomic anion**"
+    },
+    {
+      "question": "What are the properties of the chromate ion?",
+      "answer": "Name: chromate; Formula: CrO₄²⁻; Charge: −2; Type: polyatomic anion"
+    },
+    {
+      "question": "**What are the properties of the dichromate ion?**",
+      "answer": "**Name: dichromate; Formula: Cr₂O₇²⁻; Charge: −2; Type: polyatomic anion**"
+    },
+    {
+      "question": "What are the properties of the peroxide ion?",
+      "answer": "Name: peroxide; Formula: O₂²⁻; Charge: −2; Type: polyatomic anion"
+    },
+    {
+      "question": "**What are the properties of the phosphate ion?**",
+      "answer": "**Name: phosphate; Formula: PO₄³⁻; Charge: −3; Type: polyatomic anion**"
+    },
+    {
+      "question": "What are the properties of the hydrogen phosphate ion?",
+      "answer": "Name: hydrogen phosphate; Formula: HPO₄²⁻; Charge: −2; Type: polyatomic anion"
+    },
+    {
+      "question": "What are the properties of the sulfite ion?",
+      "answer": "Name: sulfite; Formula: SO₃²⁻; Charge: −2; Type: polyatomic anion"
+    },
+    {
+      "question": "**What are the properties of the sulfate ion?**",
+      "answer": "**Name: sulfate; Formula: SO₄²⁻; Charge: −2; Type: polyatomic anion**"
+    }
+  ]
