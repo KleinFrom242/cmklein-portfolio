@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .flashcard-container {
+            width: 90%;
+            max-width: 450px;
+            height: 280px;
+            perspective: 1000px;
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            font-size: 22px;
+            font-weight: normal;
+            text-align: center;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .flashcard.flip {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard .front, .flashcard .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            backface-visibility: hidden;
+            padding: 20px;
+        }
+
+        .flashcard .front {
+            background: white;
+            color: black;
+        }
+
+        .flashcard .back {
+            background: #ffcc00;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 450px;
+        }
+
+        .button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            flex: 1;
+            margin: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #0056b3;
+        }
+
+        .counter {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .progress-bar {
+            width: 90%;
+            max-width: 450px;
+            height: 8px;
+            background: #ddd;
+            border-radius: 4px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            width: 0%;
+            background: #007bff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            .flashcard-container {
+                height: 230px;
+            }
+
+            .flashcard {
+                font-size: 18px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .counter {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flashcard-container">
+        <div class="flashcard" onclick="flipCard()">
+            <div class="front">Loading...</div>
+            <div class="back"></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="button" onclick="prevCard()">❮ Prev</button>
+        <button class="button" onclick="randomizeCards()">🔀 Randomize</button>
+        <button class="button" onclick="nextCard()">Next ❯</button>
+    </div>
+
+    <div class="counter"></div>
+
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+
+    <script>
+        let flashcards = JSON.parse('{{ flashcards | tojson | safe }}');
+
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function shuffle(array) {
+            return array.sort(() => Math.random() - 0.5);
+        }
+
+        let savedIndex = getCookie("flashcardIndex");
+        let firstVisit = getCookie("firstVisit");
+
+        let currentIndex = savedIndex ? parseInt(savedIndex) : 0;
+
+        if (!firstVisit) {
+            flashcards = shuffle([...flashcards]);
+            setCookie("firstVisit", "true", 7);
+        }
+
+        function formatBold(text) {
+            return text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+        }
+
+        function updateFlashcard() {
+            let flashcard = document.querySelector(".flashcard");
+            
+            // Reset flip state before changing content
+            flashcard.classList.remove("flip");
+
+            setTimeout(() => {
+                document.querySelector(".flashcard .front").innerHTML = formatBold(flashcards[currentIndex].question);
+                document.querySelector(".flashcard .back").innerHTML = formatBold(flashcards[currentIndex].answer);
+                document.querySelector(".counter").innerHTML = `Card ${currentIndex + 1} / ${flashcards.length}`;
+                document.querySelector(".progress").style.width = ((currentIndex + 1) / flashcards.length) * 100 + "%";
+                setCookie("flashcardIndex", currentIndex, 7);
+            }, 150); // Delay to ensure flip reset before content update
+        }
+
+        function flipCard() {
+            document.querySelector(".flashcard").classList.toggle("flip");
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % flashcards.length;
+            updateFlashcard();
+        }
+
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+            updateFlashcard();
+        }
+
+        function randomizeCards() {
+            flashcards = shuffle([...flashcards]);
+            currentIndex = 0;
+            setCookie("flashcardIndex", currentIndex, 7);
+            updateFlashcard();
+        }
+
+        updateFlashcard();
+    </script>
+
+</body>
+</html>
