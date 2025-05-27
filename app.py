@@ -20,7 +20,7 @@ def projects():
         {
             "name": "VPN Service",
             "description": "A secure VPN for privacy.",
-            "progress": 20,
+            "progress": 60,
             "icon": "fa-solid fa-shield-halved",
         },
         {
